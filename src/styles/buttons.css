@@ -1,0 +1,31 @@
+#btnContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+    padding: 5rem 0;
+}
+
+.btnSm {
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 6px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+.btnRg {
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 12px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+.btnLg {
+    font-size: 22px;
+    font-weight: 500;
+    border-radius: 12px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}

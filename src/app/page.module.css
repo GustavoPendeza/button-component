@@ -1,0 +1,120 @@
+.header {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    height: 100vh;
+    width: 25%;
+}
+
+#title {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+#titleButton {
+    color: #f7542e;
+}
+
+#titleComponent {
+    color: #090f31;
+}
+
+.nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+.nav ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    list-style: none;
+}
+
+.nav button {
+    font-size: 14px;
+    font-weight: 500;
+    padding: 0.5rem;
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+}
+
+/* ----------------- MAIN ----------------- */
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 100vh;
+}
+
+.actionSection {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 3rem;
+    background: #1a1c22;
+    color: #eeeeee;
+}
+
+.actionSection h2 {
+    font-size: 24px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+/* ----------------- SIZE ----------------- */
+
+.sizeContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sizeContainer ul {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    list-style: none;
+}
+
+.sizeContainer button,
+.colorsList button {
+    font-size: 18px;
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    color: #eeeeee;
+    background: transparent;
+    border: 1px solid transparent;
+    border-radius: 12px;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+/* ----------------- COLOR ----------------- */
+
+.colorContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.colorsList ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    list-style: none;
+}
+
+/* ----------------- SIZE, COLOR BUTTONS ----------------- */
+
+.sizeContainer button:hover,
+.sizeContainer .active,
+.colorsList button:hover,
+.colorsList .active {
+    border: 1px solid #eeeeee;
+}
