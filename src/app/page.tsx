@@ -6,13 +6,28 @@ import Nav from "@/components/Nav";
 import { useState } from "react";
 import Size from "@/components/Size";
 import Color from "@/components/Color";
+import Icon from "@/components/Icon";
 
 export default function Home() {
     const [shadow, setShadow] = useState(false);
     const [disable, setDisable] = useState(false);
     const [action, setAction] = useState<string>("size");
+    const [icon, setIcon] = useState<string>("settings");
+    const [left, setLeft] = useState<boolean>(false);
+    const [right, setRight] = useState<boolean>(false);
     const [size, setSize] = useState<string>("btnRg");
     const [color, setColor] = useState<string>("#2962FF");
+    const [r, setR] = useState(0);
+    const [g, setG] = useState(0);
+    const [b, setB] = useState(0);
+
+    const style = {
+        main: {
+            background:
+                r * 0.299 + g * 0.587 + b * 0.114 > 150 ? "#1a1c22" : "#ffffff",
+            transition: "0.2s",
+        },
+    };
 
     return (
         <>
@@ -31,8 +46,22 @@ export default function Home() {
                 />
             </header>
 
-            <main className={styles.main}>
-                <Buttons shadow={shadow} disable={disable} size={size} color={color} />
+            <main className={styles.main} style={style.main}>
+                <Buttons
+                    r={r}
+                    setR={setR}
+                    g={g}
+                    setG={setG}
+                    b={b}
+                    setB={setB}
+                    shadow={shadow}
+                    disable={disable}
+                    icon={icon}
+                    left={left}
+                    right={right}
+                    size={size}
+                    color={color}
+                />
 
                 <section className={styles.actionSection}>
                     <h2>{action}</h2>
@@ -45,7 +74,16 @@ export default function Home() {
                         <Color color={color} setColor={setColor} />
                     ) : null}
 
-                    {action === "Icon" ? "Icon" : null}
+                    {action === "icon" ? (
+                        <Icon
+                            icon={icon}
+                            setIcon={setIcon}
+                            left={left}
+                            setLeft={setLeft}
+                            right={right}
+                            setRight={setRight}
+                        />
+                    ) : null}
                 </section>
             </main>
         </>

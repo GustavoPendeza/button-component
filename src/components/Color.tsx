@@ -12,7 +12,7 @@ export default function Color({ color, setColor }: Props) {
         <div className={styles.colorContainer}>
             <div>
                 <HexColorPicker color={color} onChange={setColor} />
-                <HexColorInput color={color} onChange={setColor} />
+                <HexColorInput color={color} onChange={setColor} className={styles.hexcolorInput} />
             </div>
 
             <div className={styles.colorsList}>

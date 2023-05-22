@@ -7,6 +7,9 @@
 }
 
 .btnSm {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
     font-size: 14px;
     font-weight: 500;
     border-radius: 6px;
@@ -15,6 +18,9 @@
 }
 
 .btnRg {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
     font-size: 18px;
     font-weight: 500;
     border-radius: 12px;
@@ -23,6 +29,9 @@
 }
 
 .btnLg {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
     font-size: 22px;
     font-weight: 500;
     border-radius: 12px;

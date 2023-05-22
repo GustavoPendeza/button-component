@@ -1,5 +1,3 @@
-<!-- Please update value in the {}  -->
-
 <h1 align="center">Button Component</h1>
 
 <div align="center">
@@ -8,7 +6,7 @@
 
 <div align="center">
   <h3>
-    <a href="https://{your-demo-link.your-domain}">
+    <a href="https://button-component-navy.vercel.app">
       Demo
     </a>
     <span> | </span>
@@ -33,8 +31,11 @@
 
 ## Overview
 
-![screenshot](https://user-images.githubusercontent.com/16707738/92399059-5716eb00-f132-11ea-8b14-bcacdc8ec97b.png)
+![screenshot](https://github.com/GustavoPendeza/button-component/assets/53589614/079e954e-81a9-4271-a4c0-0266ef9a8322)
+![screenshot-2](https://github.com/GustavoPendeza/button-component/assets/53589614/60002677-6058-4842-8c5a-62ff27f723f4)
 
 ### Built With
 
 -   [React](https://nextjs.org)
+-   [React-Colorful](https://github.com/omgovich/react-colorful)
+-   [React-Icons](https://react-icons.github.io/react-icons/)
